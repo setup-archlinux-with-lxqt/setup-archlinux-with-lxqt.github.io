@@ -1,0 +1,4 @@
+baseURL = 'https://github.com/setup-archlinux-with-lxqt/setup-archlinux-with-lxqt.github.io/'
+languageCode = 'pt-br'
+title = 'Configurar Archlinux com Lxqt!'
+theme = [] # Mantemos vazio para usar o layout customizado abaixo
