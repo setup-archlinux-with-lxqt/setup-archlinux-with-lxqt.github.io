@@ -85,13 +85,13 @@ mount --bind /sys /mnt/sys
 Exemplo: nvme0n1p1 e nvme0n1p2
 
 3. Instala o sistema base (esse passo pode demorar)
-```
+```bash
 pacstrap -K /mnt base linux linux-firmware networkmanager
 ```
 
 4. Gera fstab e entra no sistema
 
-```
+```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
