@@ -211,7 +211,7 @@ Login feito, entao:
 
 
 
-### Links
+### Links úteis
 
 https://aur.archlinux.org/packages/brave-bin
 
