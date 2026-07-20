@@ -143,7 +143,72 @@ umount -R /mnt
 reboot
 ```
 
-9. Conecta no Wifi
+Após reiniciar, o sistema solicitará seu usario e senha para acesso via terminal
+Login feito, entao:
+
+9. Conecte no Wifi
+
+10. Instale ambiente grafico de sua preferencia
+    Por exemplo, lxqt
+    ```bash
+    sudo pacman -S lxqt lxqt-archiver sddm
+    sudo systemctl enable sddm
+    ```
+
+### Vá em frente
+- Voce vai precisar instalar os drivers de audio
+- Voce vai precisar instalar os drivers de bluetooth
+
+
+### Recomendações
+1. Troca o bash pelo fish
+2. Limite a carga do journald na ram
+   O systemd-journald come RAM guardando log:
+   ```bash
+   sudo vim /etc/systemd/journald.conf
+   ```
+   Edite com estes valores
+   SystemMaxUse=10M
+   Storage=volatile
+   Depois: 
+   ```bash
+   sudo systemctl restart systemd-journald
+   ```
+3. Instalar Fish
+   ```bash
+   sudo pacman -S fish
+   chsh -s /usr/bin/fish
+   ```
+   Depois faz logout e login. Fish já vem com autocomplete e gasta parecido com bash, mas é mais rápido.
+   
+4. Mudar NetworkManager por iwd + dhcpcd
+   Instalar
+   ```bash
+   sudo pacman -S iwd dhcpcd
+   ```
+
+   Desativar NetworkManager e ativar iwd e dhcpcd
+   ```bash
+   sudo systemctl disable NetworkManager
+   sudo systemctl stop NetworkManager
+   sudo systemctl enable iwd
+   sudo systemctl start iwd
+   sudo systemctl enable dhcpcd
+   sudo systemctl start dhcpcd
+   
+   ```
+
+   Pra conectar wifi no iwd depois do reboot:
+   ```bash
+   iwctl
+   station wlan0 scan
+   station wlan0 get-networks
+   station wlan0 connect NOME_DA_REDE
+   # DIGITA SUA SENHA
+   exit
+   ```
+   Teste se conectou com <code> ping archlinux.org </code>
+
 
 
 ### Links
