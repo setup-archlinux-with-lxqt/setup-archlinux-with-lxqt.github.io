@@ -23,7 +23,11 @@ Ao consultar o preço atualizado de peças, computadores e notebooks, me levou a
 
 Do ponto de vista no uso de inteligencia artifical no meu dia-a-dia, ela se encaixa perfeitamente como motor consultivo (tradução, duvidas, comparativo, sumarização, tabulação, exemplos, duvidas e etc), portanto não faz sentido eu receber atualizacoes de software com recursos de IA, que nao tem sentido algum para meu uso final, a nao ser consumir recursos computacional do notebook, impossibilitando o uso.
 
-### 1 Baixe o Archlinux
+### 0 - BIOS
+Entre na bios do seu computador, e desative o fast bios mode.
+
+
+### 1 - Baixe o Archlinux
 
 Baixe o Ventoy, efetue a extração e efetue a formatação do pendrive com este programa
 Após, copie e cole a ISO do archlinux no pendrive
@@ -31,9 +35,115 @@ Após, copie e cole a ISO do archlinux no pendrive
 [Ventoy](https://www.ventoy.net/en/index.html)
 [Arch](https://archlinux.org/download/)
 
-### 2 Inicialize o Archlinux
+### 2 - Inicialize o Archlinux
 
+Acesse a bios do seu computador, e defina a ordem do boot para o pendrive com o ventoy,
+apos o restart, a tela do ventoy aparecerá, selecione o arch e pressione enter.
 
+### 3 - Instalar o Archlinux
+
+#### 3.1 - Conectar na Internet
+
+```
+iwctl
+station wlan0 scan
+station wlan0 get-networks  
+station wlan0 connect NOME_DA_REDE
+exit
+```
+
+Teste com
+```
+ping archlinux.org
+```
+para interromper, pressione CTRL+C
+
+#### 3.2 Particione o disco (atenção) e instale o Arch
+1. Particiona o disco
+Se for instalar do zero:
+```
+fdisk -l
+cfdisk /dev/SEU_DISCO  # troca pelo seu disco
+```
+Atenção: 
+Cria 2 partições: 1GB EFI tipo ef00 + resto Linux filesystem
+
+2. Formata e monta
+```
+mkfs.fat -F32 /dev/SEU_DISCO_PARTICAO1
+mkfs.ext4 /dev/SEU_DISCO_PARTICAO2
+
+mount /dev/SEU_DISCO_PARTICAO2 /mnt
+mkdir /mnt/boot
+mount /dev/SEU_DISCO_PARTICAO1 /mnt/boot
+
+mount --bind /dev /mnt/dev
+mount --bind /proc /mnt/proc
+mount --bind /sys /mnt/sys
+
+```
+Exemplo: nvme0n1p1 e nvme0n1p2
+
+3. Instala o sistema base (esse passo pode demorar)
+```
+pacstrap -K /mnt base linux linux-firmware networkmanager
+```
+
+4. Gera fstab e entra no sistema
+
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+
+```
+
+5. Configurações básicas dentro do chroot
+
+```
+# FUSO BR
+ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+hwclock --systohc
+
+# LANG BR
+echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
+locale-gen
+echo "LANG=pt_BR.UTF-8" > /etc/locale.conf
+echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
+
+# NOME DO PC
+echo "arch" > /etc/hostname
+
+# DEFINA A SENHA DO USUARIO ROOT
+passwd
+
+# GRUB
+pacman -S --noconfirm grub efibootmgr os-prober
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --removable
+grub-mkconfig -o /boot/grub/grub.cfg
+
+```
+
+6. Crie seu usuário
+```
+pacman -S --noconfirm sudo
+useradd -m -G wheel user
+passwd pass
+EDITOR=nano visudo  # descomenta a linha %wheel ALL=(ALL:ALL) ALL
+```
+
+7. Habilita a Internet
+```
+systemctl enable NetworkManager
+```
+
+8. Sai e reinicia
+``` 
+exit
+umount -R /mnt
+reboot
+```
+
+9. Conecta no Wifi
 
 
 ### Links
