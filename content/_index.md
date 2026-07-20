@@ -44,7 +44,7 @@ apos o restart, a tela do ventoy aparecerá, selecione o arch e pressione enter.
 
 #### 3.1 - Conectar na Internet
 
-```
+```bash
 iwctl
 station wlan0 scan
 station wlan0 get-networks  
@@ -53,7 +53,7 @@ exit
 ```
 
 Teste com
-```
+```bash
 ping archlinux.org
 ```
 para interromper, pressione CTRL+C
@@ -61,7 +61,7 @@ para interromper, pressione CTRL+C
 #### 3.2 Particione o disco (atenção) e instale o Arch
 1. Particiona o disco
 Se for instalar do zero:
-```
+```bash
 fdisk -l
 cfdisk /dev/SEU_DISCO  # troca pelo seu disco
 ```
@@ -69,7 +69,7 @@ Atenção:
 Cria 2 partições: 1GB EFI tipo ef00 + resto Linux filesystem
 
 2. Formata e monta
-```
+```bash
 mkfs.fat -F32 /dev/SEU_DISCO_PARTICAO1
 mkfs.ext4 /dev/SEU_DISCO_PARTICAO2
 
@@ -99,7 +99,7 @@ arch-chroot /mnt
 
 5. Configurações básicas dentro do chroot
 
-```
+```bash
 # FUSO BR
 ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 hwclock --systohc
@@ -124,7 +124,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 6. Crie seu usuário
-```
+```bash
 pacman -S --noconfirm sudo
 useradd -m -G wheel user
 passwd pass
@@ -132,12 +132,12 @@ EDITOR=nano visudo  # descomenta a linha %wheel ALL=(ALL:ALL) ALL
 ```
 
 7. Habilita a Internet
-```
+```bash
 systemctl enable NetworkManager
 ```
 
 8. Sai e reinicia
-``` 
+```bash
 exit
 umount -R /mnt
 reboot
