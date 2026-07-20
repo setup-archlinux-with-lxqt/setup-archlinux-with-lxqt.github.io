@@ -23,6 +23,16 @@ Ao consultar o preço atualizado de peças, computadores e notebooks, me levou a
 
 Do ponto de vista no uso de inteligencia artifical no meu dia-a-dia, ela se encaixa perfeitamente como motor consultivo (tradução, duvidas, comparativo, sumarização, tabulação, exemplos, duvidas e etc), portanto não faz sentido eu receber atualizacoes de software com recursos de IA, que nao tem sentido algum para meu uso final, a nao ser consumir recursos computacional do notebook, impossibilitando o uso.
 
+### 1 Baixe o Archlinux
+
+Baixe o Ventoy, efetue a extração e efetue a formatação do pendrive com este programa
+Após, copie e cole a ISO do archlinux no pendrive
+
+[Ventoy](https://www.ventoy.net/en/index.html)
+[Arch](https://archlinux.org/download/)
+
+### 2 Inicialize o Archlinux
+
 
 
 
