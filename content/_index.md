@@ -77,9 +77,7 @@ mount /dev/SEU_DISCO_PARTICAO2 /mnt
 mkdir /mnt/boot
 mount /dev/SEU_DISCO_PARTICAO1 /mnt/boot
 
-mount --bind /dev /mnt/dev
-mount --bind /proc /mnt/proc
-mount --bind /sys /mnt/sys
+
 
 ```
 Exemplo: nvme0n1p1 e nvme0n1p2
@@ -87,6 +85,11 @@ Exemplo: nvme0n1p1 e nvme0n1p2
 3. Instala o sistema base (esse passo pode demorar)
 ```bash
 pacstrap -K /mnt base linux linux-firmware networkmanager
+
+mount --bind /dev /mnt/dev
+mount --bind /proc /mnt/proc
+mount --bind /sys /mnt/sys
+
 ```
 
 4. Gera fstab e entra no sistema
