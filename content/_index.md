@@ -196,12 +196,22 @@ Login feito, entao:
     # MONITORES
     sudo pacman -Sy --noconfirm arandr
 
-    # TEMAS e FONTES
+    # TEMAS
     sudo pacman -Sy --noconfirm --needed --noconfirm kvantum
     sudo pacman -Sy --noconfirm --needed --noconfirm breeze-gtk   
     sudo pacman -Sy --noconfirm --needed --noconfirm papirus-icon-theme
+
+    # WALLPAPERS
     sudo pacman -Sy --noconfirm --needed --noconfirm plasma-workspace-wallpapers
+    sudo pacman -Sy --noconfirm --needed --noconfirm elementary-wallpapers
+    sudo pacman -Sy --noconfirm --needed --noconfirm deepin-wallpapers
+    sudo pacman -Sy --noconfirm --needed --noconfirm cosmic-wallpapers
+    sudo pacman -Sy --noconfirm --needed --noconfirm archlinux-wallpapers
+
+    # FONTES
     sudo pacman -Sy --noconfirm --needed ttf-atkinson-hyperlegible
+
+
 
     sudo pacman -Sy --noconfirm linux-firmware 
     
