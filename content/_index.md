@@ -172,7 +172,7 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm xf86-libinput libinput
     
     # BLUETHOOT
-    sudo pacman -Sy --noconfirm bluez bluez-utils
+    sudo pacman -Sy --noconfirm --needed blueman bluez bluez-utils
     
     # AUDIO
     sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
@@ -197,7 +197,6 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm arandr
 
     # APARENCIA 
-    sudo pacman -Sy --noconfirm --needed kvantum
     sudo pacman -Sy --noconfirm --needed breeze-gtk   
     sudo pacman -Sy --noconfirm --needed papirus-icon-theme
     sudo pacman -Sy --noconfirm --needed plasma-workspace-wallpapers
@@ -233,7 +232,10 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
 
     sudo pacman -Sy --noconfirm linux-firmware 
-    
+
+
+    sudo systemctl enable --now bluetooth
+
     ```
 
 ### Recomendações
@@ -289,768 +291,91 @@ Login feito, entao:
 ### Pacotes
 ```bash
 
-a52dec
-abseil-cpp
-acl
-adapta-gtk-theme
-adw-gtk-theme
-adwaita-cursors
-adwaita-fonts
-adwaita-icon-theme
-adwaita-icon-theme-legacy
-alsa-card-profiles
-alsa-lib
-alsa-topology-conf
-alsa-ucm-conf
-alsa-utils
-analitza
-aom
-apache
-appstream
-apr
-apr-util
-arandr
-archlinux-keyring
-at-spi2-core
-attica
-attr
-audit
-avahi
-avogadro-crystals
-avogadro-fragments
-avogadro-molecules
-avogadrolibs
-avogadrolibs-qt
-base
-bash
-binutils
-bluez
-bluez-libs
-bluez-obex
-bolt
-boost-libs
-breeze
-breeze-cursors
-breeze-gtk
-breeze-icons
-brotli
-bubblewrap
-bzip2
-ca-certificates
-ca-certificates-mozilla
-ca-certificates-utils
-cairo
-cairomm-1.16
-caja-extensions-common
-colord-gtk-common
-colord-gtk4
-confuse
-coordgen
-coreutils
-cosmic-icon-theme
-cosmic-sound-theme
-cosmic-wallpapers
-cpupower
-cronie
-cryptsetup
-cups-pk-helper
-curl
-dav1d
-db5.3
-dbus
-dbus-broker
-dbus-broker-units
-dbus-units
-dconf
-deepin-gtk-theme
-deepin-icon-theme
-deepin-sound-theme
-deepin-wallpapers
-default-cursors
-desktop-file-utils
-device-mapper
-dhcpcd
-diffutils
-docbook-xml
-docbook-xsl
-double-conversion
-duktape
-e2fsprogs
-efibootmgr
-efivar
-elementary-icon-theme
-elementary-wallpapers
-ell
-expat
-faad2
-falkon
-featherpad
-ffmpeg
-fftw
-file
-filesystem
-findutils
-flac
-fmt
-fontconfig
-frameworkintegration
-freerdp
-freetype2
-fribidi
-fuse-common
-fuse3
-gammastep
-gawk
-gcc-libs
-gcr-4
-gdbm
-gdk-pixbuf2
-gettext
-giflib
-glew
-glib-networking
-glib2
-glibc
-glibmm-2.68
-glslang
-glu
-glycin
-gmp
-gnome-bluetooth-3.0
-gnome-keybindings
-gnome-menus
-gnome-online-accounts
-gnu-free-fonts
-gnulib-l10n
-gnupg
-gnutls
-gobject-introspection-runtime
-gperftools
-gpgme
-gpgmepp
-gpm
-granite
-graphene
-graphite
-grep
-grim
-grub
-gsettings-desktop-schemas
-gsettings-system-schemas
-gsm
-gsound
-gssdp
-gst-plugins-bad-libs
-gst-plugins-base-libs
-gstreamer
-gtest
-gtk-session-lock
-gtk-theme-elementary
-gtk-update-icon-cache
-gtk3
-gtk4
-gtklock
-gtkmm-4.0
-gupnp
-gupnp-igd
-gzip
-harfbuzz
-hdf5
-hicolor-icon-theme
-hidapi
-highway
-htop
-hunspell
-hwdata
-hwloc
-iana-etc
-icu
-imagemagick
-imlib2
-inchi
-intel-ucode
-iproute2
-iptables
-iputils
-iso-codes
-iwd
-jansson
-jbigkit
-jkqtplotter
-json-c
-json-glib
-karchive
-kbd
-kbookmarks
-kcachegrind-common
-kcmutils
-kcodecs
-kcolorscheme
-kcompletion
-kconfig
-kconfigwidgets
-kcoreaddons
-kcrash
-kdbusaddons
-kdecoration
-kdiagram
-kdoctools
-keyutils
-kglobalaccel
-kguiaddons
-ki18n
-kiconthemes
-kidletime
-kio
-kirigami
-kitemviews
-kjobwidgets
-kmod
-knewstuff
-knotifications
-kpackage
-kpmcore
-kqtquickcharts
-krb5
-kservice
-ktexttemplate
-kunitconversion
-kvantum
-kwallet
-kwidgetsaddons
-kwindowsystem
-kxmlgui
-l-smash
-lame
-layer-shell-qt
-lcms2
-leancrypto
-less
-libadwaita
-libaec
-libao
-libappindicator
-libarchive
-libasan
-libass
-libassuan
-libasyncns
-libatasmart
-libatomic
-libavc1394
-libavif
-libb2
-libblake3
-libblockdev
-libblockdev-crypto
-libblockdev-fs
-libblockdev-loop
-libblockdev-mdraid
-libblockdev-nvme
-libblockdev-part
-libblockdev-smart
-libblockdev-swap
-libbluray
-libbpf
-libbs2b
-libbsd
-libbytesize
-libcamera
-libcamera-ipa
-libcanberra
-libcap
-libcap-ng
-libcbor
-libcloudproviders
-libcolord
-libcups
-libdaemon
-libdatrie
-libdbusmenu-glib
-libdbusmenu-gtk3
-libdbusmenu-lxqt
-libdeflate
-libdovi
-libdrm
-libdvdnav
-libdvdread
-libebml
-libebur128
-libedit
-libelf
-libepoxy
-libev
-libevdev
-libevent
-libexif
-libfdk-aac
-libffi
-libfido2
-libfm-extra
-libfm-qt
-libfontenc
-libfreeaptx
-libfyaml
-libgcc
-libgcrypt
-libgee
-libgfortran
-libgirepository
-libglvnd
-libgoa
-libgomp
-libgpg-error
-libgudev
-libhwasan
-libical
-libice
-libidn2
-libiec61883
-libimagequant
-libimobiledevice
-libimobiledevice-glue
-libinih
-libinput
-libjpeg-turbo
-libjxl
-libksba
-libkscreen
-liblc3
-libldac
-libldap
-liblqr
-liblsan
-liblxqt
-libmakepkg-dropins
-libmatekbd
-libmatemixer
-libmatroska
-libmd
-libmm-glib
-libmnl
-libmodplug
-libmsym
-libmysofa
-libndp
-libnetfilter_conntrack
-libnewt
-libnfnetlink
-libnftnl
-libnghttp2
-libnghttp3
-libngtcp2
-libnice
-libnl
-libnm
-libnma
-libnma-common
-libnotify
-libnsl
-libnvme
-libobjc
-libogg
-libopenmpt
-libp11-kit
-libpcap
-libpciaccess
-libpgm
-libpipewire
-libplacebo
-libplist
-libpng
-libproxy
-libpsl
-libpulse
-libqtxdg
-libquadmath
-libraqm
-libraw1394
-librest
-librsvg
-libsamplerate
-libsasl
-libseccomp
-libsecret
-libshout
-libsigc++-3.0
-libsm
-libsndfile
-libsodium
-libsoup3
-libsoxr
-libssh
-libssh2
-libstdc++
-libstemmer
-libsynctex
-libsysprof-capture
-libtasn1
-libtatsu
-libteam
-libthai
-libtheora
-libtiff
-libtirpc
-libtool
-libtsan
-libubsan
-libunibreak
-libunistring
-libunwind
-liburing
-libusb
-libusbmuxd
-libva
-libvdpau
-libverto
-libvlc
-libvorbis
-libvpl
-libvpx
-libwacom
-libwebp
-libwireplumber
-libx11
-libxau
-libxcb
-libxcomposite
-libxcrypt
-libxcursor
-libxcvt
-libxdamage
-libxdmcp
-libxext
-libxfixes
-libxfont2
-libxft
-libxi
-libxinerama
-libxkbcommon
-libxkbcommon-x11
-libxkbfile
-libxklavier
-libxml2
-libxmlb
-libxmu
-libxrandr
-libxrender
-libxshmfence
-libxslt
-libxss
-libxt
-libxtst
-libxv
-libxxf86vm
-libyaml
-libyuv
-licenses
-lightdm
-lightdm-gtk-greeter
-lilv
-linux
-linux-api-headers
-linux-firmware
-linux-firmware-amdgpu
-linux-firmware-atheros
-linux-firmware-broadcom
-linux-firmware-cirrus
-linux-firmware-intel
-linux-firmware-mediatek
-linux-firmware-nvidia
-linux-firmware-other
-linux-firmware-radeon
-linux-firmware-realtek
-linux-firmware-whence
-linux-headers
-llvm-libs
-lm_sensors
-lmdb
-lua
-lua54
-lv2
-lxde-icon-theme
-lximage-qt
-lxqt-about
-lxqt-admin
-lxqt-archiver
-lxqt-config
-lxqt-globalkeys
-lxqt-menu-data
-lxqt-notificationd
-lxqt-openssh-askpass
-lxqt-panel
-lxqt-policykit
-lxqt-powermanagement
-lxqt-qtplugin
-lxqt-runner
-lxqt-session
-lxqt-sudo
-lxqt-themes
-lz4
-lzo
-maeparser
-marble-common
-mate-icon-theme
-materia-gtk-theme
-mathjax2
-md4c
-mdadm
-media-player-info
-menu-cache
-mesa
-minizip
-mkinitcpio
-mkinitcpio-busybox
-mobile-broadband-provider-info
-mod_dnssd
-mpdecimal
-mpfr
-mpg123
-mtdev
-muparser
-ncurses
-nettle
-networkmanager
-nftables
-nm-connection-editor
-noto-fonts
-npth
-nspr
-nss
-obconf-qt
-obsidian-icon-theme
-ocean-sound-theme
-ocl-icd
-onetbb
-openbabel
-openbox
-opencore-amr
-openh264
-openjpeg2
-openssh
-openssl
-opus
-opusfile
-orc
-orchis-theme
-os-prober
-oxygen-icons
-oxygen-sounds
-p11-kit
-pacman
-pacman-mirrorlist
-pahole
-pam
-pambase
-pango
-pangomm-2.48
-papirus-icon-theme
-parted
-pavucontrol-qt
-pciutils
-pcmanfm-qt
-pcre
-pcre2
-pcsclite
-perl
-phonon-qt6
-phonon-qt6-vlc
-pinentry
-pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-jack
-pipewire-pulse
-pipewire-session-manager
-pixman
-plasma-workspace-wallpapers
-polkit
-polkit-qt6
-pop-icon-theme
-popt
-portaudio
-procps-ng
-protobuf
-psmisc
-pugixml
-pulse-native-provider
-python
-python-cairo
-python-cairocffi
-python-cairosvg
-python-cffi
-python-cssselect2
-python-defusedxml
-python-gobject
-python-packaging
-python-pillow
-python-pycparser
-python-pyparsing
-python-pyudev
-python-svgwrite
-python-systemd
-python-tinycss2
-python-webencodings
-qca-qt6
-qt6-5compat
-qt6-base
-qt6-declarative
-qt6-positioning
-qt6-shadertools
-qt6-svg
-qt6-translations
-qt6-webchannel
-qt6-webengine
-qterminal
-qtermwidget
-qtkeychain-qt6
-qtxdg-tools
-rav1e
-re2
-readline
-rubberband
-run-parts
-sbc
-screengrab
-sddm
-sdl2-compat
-sdl3
-sdl3_ttf
-sed
-serd
-shaderc
-shadow
-shared-mime-info
-slang
-slurp
-smartmontools
-snappy
-sndio
-socat
-sof-firmware
-sof-tools
-solid
-sord
-sound-theme-elementary
-sound-theme-freedesktop
-spandsp
-speex
-speexdsp
-spglib
-spirv-tools
-sqlite
-sratom
-srt
-startup-notification
-sudo
-svt-av1
-swaybg
-swayidle
-swaylock
-syndication
-systemd
-systemd-libs
-systemd-sysvcompat
-taglib
-tar
-tdb
-tecla
-tinysparql
-tpm2-tss
-tslib
-ttf-atkinson-hyperlegible
-twolame
-tzdata
-udisks2
-upower
-usbutils
-util-linux
-util-linux-libs
-v4l-utils
-vapoursynth
-vid.stab
-vim
-vim-runtime
-vlc-plugin-a52dec
-vlc-plugin-alsa
-vlc-plugin-archive
-vlc-plugin-dav1d
-vlc-plugin-dbus
-vlc-plugin-dbus-screensaver
-vlc-plugin-faad2
-vlc-plugin-flac
-vlc-plugin-gnutls
-vlc-plugin-inflate
-vlc-plugin-journal
-vlc-plugin-jpeg
-vlc-plugin-matroska
-vlc-plugin-mpg123
-vlc-plugin-ogg
-vlc-plugin-opus
-vlc-plugin-png
-vlc-plugin-shout
-vlc-plugin-speex
-vlc-plugin-tag
-vlc-plugin-theora
-vlc-plugin-twolame
-vlc-plugin-vorbis
-vlc-plugin-vpx
-vlc-plugin-xml
-vlc-plugins-base
-vmaf
-volume_key
-vorbis-tools
-vulkan-icd-loader
-wayland
-wdisplays
-webrtc-audio-processing-1
-wf-recorder
-wireless_tools
-wireplumber
-wlopm
-wpa_supplicant
-x264
-x265
-xapian-core
-xcb-proto
-xcb-util
-xcb-util-cursor
-xcb-util-image
-xcb-util-keysyms
-xcb-util-renderutil
-xcb-util-wm
-xcb-util-xrm
-xdg-desktop-portal
-xdg-desktop-portal-gtk
-xdg-desktop-portal-lxqt
-xdg-desktop-portal-wlr
-xdg-user-dirs
-xdg-utils
-xf86-input-libinput
-xkeyboard-config
-xorg-fonts-encodings
-xorg-server
-xorg-server-common
-xorg-setxkbmap
-xorg-xauth
-xorg-xkbcomp
-xorg-xmodmap
-xorg-xprop
-xorg-xrandr
-xorg-xrdb
-xorgproto
-xprintidle
-xvidcore
-xxhash
-xz
-yajl
-zeromq
-zimg
-zip
-zix
-zlib
-zram-generator
-zstd
+adapta-gtk-theme 3.95.0.11-4
+adw-gtk-theme 6.5-1
+alsa-utils 1.2.16-1
+arandr 0.1.11-6
+base 3-3
+blueman 2.4.6-2
+bluez-utils 5.87-2
+bolt 0.9.11-1
+breeze 6.7.3-1
+breeze-cursors 6.7.3-1
+breeze-gtk 6.7.3-1
+cosmic-icon-theme 1:1.4.0-1
+cosmic-sound-theme 1.4.0-1
+cosmic-wallpapers 2:1.4.0-1
+deepin-gtk-theme 1:25.3.7-2
+deepin-icon-theme 2026.02.27-1
+deepin-sound-theme 15.10.6-2
+deepin-wallpapers 1:1.7.26-1
+dhcpcd 10.3.2-1
+efibootmgr 18-4
+elementary-icon-theme 8.2.0-2
+elementary-wallpapers 8.0.0-2
+falkon 26.04.3-1
+featherpad 1.6.3-1
+grub 2:2.14-1
+gtk-theme-elementary 8.2.2-2
+htop 3.5.2-1
+intel-ucode 20260512-1
+iwd 3.12-1
+layer-shell-qt 6.7.3-1
+less 1:704-1
+libkscreen 6.7.3-1
+lightdm 1:1.32.0-9
+lightdm-gtk-greeter 1:2.0.9-2
+linux 7.1.4.arch1-1
+linux-firmware 20260622-1
+linux-headers 7.1.4.arch1-1
+lxde-icon-theme 0.5.2-2
+lximage-qt 2.4.0-1
+lxqt-about 2.4.0-1
+lxqt-admin 2.4.0-1
+lxqt-archiver 1.4.0-1
+lxqt-config 2.4.0-1
+lxqt-globalkeys 2.4.0-1
+lxqt-menu-data 2.4.0-1
+lxqt-notificationd 2.4.0-1
+lxqt-openssh-askpass 2.4.0-1
+lxqt-panel 2.4.1-1
+lxqt-policykit 2.4.0-1
+lxqt-powermanagement 2.4.0-1
+lxqt-qtplugin 2.4.0-2
+lxqt-runner 2.4.0-1
+lxqt-session 2.4.0-2
+lxqt-sudo 2.4.0-1
+lxqt-themes 2.4.0-1
+mate-icon-theme 1.28.0-2
+networkmanager 1.58.0-1
+obconf-qt 0.16.6-1
+obsidian-icon-theme 4.15-3
+ocean-sound-theme 6.7.3-1
+openbox 3.6.1-14
+orchis-theme 2026_07_07-1
+os-prober 1.84-1
+oxygen-icons 1:6.28.0-1
+oxygen-sounds 6.7.3-1
+papirus-icon-theme 20250501-1
+pavucontrol-qt 2.4.0-1
+pcmanfm-qt 2.4.0-1
+pipewire-alsa 1:1.6.8-1
+pipewire-jack 1:1.6.8-1
+plasma-workspace-wallpapers 6.7.3-1
+pop-icon-theme 3.5.1-1
+qterminal 2.4.0-1
+screengrab 3.2.0-1
+sddm 0.21.0-7
+sof-firmware 2025.12.2-1
+sof-tools 2025.12.2-1
+sound-theme-elementary 1.1.0-4
+sudo 1.9.17.p2-6
+swaylock 1.8.6-1
+ttf-atkinson-hyperlegible 1.006-2
+usbutils 019-1
+vim 9.2.0804-1
+xdg-desktop-portal-lxqt 1.4.0-1
+zram-generator 1.2.1-1
 
 
 ```
