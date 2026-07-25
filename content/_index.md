@@ -164,7 +164,8 @@ Login feito, entao:
     sudo reflector --country Brazil --latest 5 --sort rate
 
     # LXQT
-    sudo pacman -Sy --noconfirm --needed lxqt lxqt-archiver sddm
+    sudo pacman -Sy --noconfirm --needed lxqt lxqt-archiver
+    sudo pacman -Sy --noconfirm --needed xsettingsd
 
     # OPENBOX
     sudo pacman -Sy --noconfirm --needed openbox
