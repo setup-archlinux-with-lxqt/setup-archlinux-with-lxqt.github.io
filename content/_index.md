@@ -213,6 +213,33 @@ Login feito, entao:
 
 
 
+
+    sudo pacman -Sy --noconfirm --needed sound-theme-freedesktop
+    sudo pacman -Sy --noconfirm --needed pop-icon-theme 
+    sudo pacman -Sy --noconfirm --needed papirus-icon-theme
+    sudo pacman -Sy --noconfirm --needed oxygen-sounds
+    sudo pacman -Sy --noconfirm --needed oxygen-icons
+    sudo pacman -Sy --noconfirm --needed orchis-theme
+    sudo pacman -Sy --noconfirm --needed ocean-sound-theme
+    sudo pacman -Sy --noconfirm --needed obsidian-icon-theme
+    sudo pacman -Sy --noconfirm --needed materia-gtk-theme
+    sudo pacman -Sy --noconfirm --needed mate-icon-theme
+    sudo pacman -Sy --noconfirm --needed lxqt-themes
+    sudo pacman -Sy --noconfirm --needed lxde-icon-theme
+    sudo pacman -Sy --noconfirm --needed gtk-theme-elementary
+    sudo pacman -Sy --noconfirm --needed elementary-icon-theme
+    sudo pacman -Sy --noconfirm --needed sound-theme-elementary
+    sudo pacman -Sy --noconfirm --needed deepin-sound-theme 
+    sudo pacman -Sy --noconfirm --needed deepin-icon-theme
+    sudo pacman -Sy --noconfirm --needed deepin-gtk-theme
+    sudo pacman -Sy --noconfirm --needed cosmic-sound-theme
+    sudo pacman -Sy --noconfirm --needed cosmic-icon-theme
+    sudo pacman -Sy --noconfirm --needed breeze-icons
+    sudo pacman -Sy --noconfirm --needed breeze-gtk
+    sudo pacman -Sy --noconfirm --needed adwaita-icon-theme
+    sudo pacman -Sy --noconfirm --needed adw-gtk-theme
+    sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
+
     sudo pacman -Sy --noconfirm linux-firmware 
     
     ```
