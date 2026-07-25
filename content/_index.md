@@ -167,6 +167,9 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm usbutils
     sudo pacman -Sy --noconfirm intel-ucode
     sudo pacman -Sy --noconfirm bolt
+
+    # HD
+    sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
     
     # MOUSE and TOUCHPAD
     sudo pacman -Sy --noconfirm xf86-libinput libinput
