@@ -177,10 +177,6 @@ Login feito, entao:
     # AUDIO
     sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
     sudo pacman -Sy --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
-
-    # TERMINAL
-    sudo pacman -Rns qterminal
-    sudo pacman -Sy --noconfirm alacritty
     
     # BROWSER
     sudo pacman -Sy --noconfirm falkon
