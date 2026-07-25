@@ -259,18 +259,71 @@ Login feito, entao:
    Teste se conectou com <code> ping archlinux.org </code>
 
 
+### Pacotes
+```bash
+alsa-utils
+base
+bolt
+breeze-cursors
+dhcpcd
+efibootmgr
+falkon
+featherpad
+grub
+htop
+intel-ucode
+iwd
+layer-shell-qt
+less
+libkscreen
+lightdm
+lightdm-gtk-greeter
+linux
+linux-firmware
+linux-headers
+lximage-qt
+lxqt-about
+lxqt-admin
+lxqt-archiver
+lxqt-config
+lxqt-globalkeys
+lxqt-menu-data
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+lxqt-sudo
+lxqt-themes
+networkmanager
+obconf-qt
+openbox
+os-prober
+pavucontrol-qt
+pcmanfm-qt
+pipewire-alsa
+pipewire-jack
+qterminal
+screengrab
+sddm
+sof-firmware
+sof-tools
+sudo
+swaylock
+usbutils
+vim
+xdg-desktop-portal-lxqt
+zram-generator
+```
+
 
 ### Links úteis
 
-https://aur.archlinux.org/packages/brave-bin
-
-https://aur.archlinux.org/brave-bin.git
-
 https://www.jetbrains.com/pt-br/idea/download/other/#releases-2024
-
 https://download.jetbrains.com/idea/ideaIC-2023.2.5.tar.gz
-
 https://www.jetbrains.com/pt-br/webstorm/download/other/#releases-2024
-
 https://download.jetbrains.com/webstorm/WebStorm-2024.1.7.tar.gz
 
