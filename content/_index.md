@@ -192,16 +192,18 @@ Login feito, entao:
     thermald tuned \
     linux-firmware \
     intel-ucode base-devel dkms
-    
-    sudo pacman -Sy --noconfirm --needed --noconfirm \
-    papirus-icon-theme kvantum qt5-styleplugins qt6-styleplugins \
-    adwaita-qt5 adwaita-qt6 \
-    arc-gtk-theme breeze-gtk \
-    ttf-atkinson-hyperlegible
-    
-    sudo pacman -Sy --noconfirm linux-firmware 
-    
 
+    # MONITORES
+    sudo pacman -Sy --noconfirm arandr
+
+    # TEMAS e FONTES
+    sudo pacman -Sy --noconfirm --needed --noconfirm kvantum
+    sudo pacman -Sy --noconfirm --needed --noconfirm breeze-gtk   
+    sudo pacman -Sy --noconfirm --needed --noconfirm papirus-icon-theme
+    sudo pacman -Sy --noconfirm --needed --noconfirm plasma-workspace-wallpapers
+    sudo pacman -Sy --noconfirm --needed ttf-atkinson-hyperlegible
+
+    sudo pacman -Sy --noconfirm linux-firmware 
     
     ```
 
