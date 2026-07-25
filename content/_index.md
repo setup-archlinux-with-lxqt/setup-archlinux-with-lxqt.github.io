@@ -157,55 +157,54 @@ Login feito, entao:
     Por exemplo, lxqt
     ```bash
 
+    # LXQt
+    sudo pacman -Sy --noconfirm lxqt lxqt-archiver sddm
 
-# LXQt
-sudo pacman -Sy --noconfirm lxqt lxqt-archiver sddm
+    # OPENBOX
+    sudo pacman -Sy --noconfirm openbox
 
-# OPENBOX
-sudo pacman -Sy --noconfirm openbox
+    # USB
+    sudo pacman -Sy --noconfirm usbutils
+    sudo pacman -Sy --noconfirm intel-ucode
+    sudo pacman -Sy --noconfirm bolt
+    
+    # MOUSE and TOUCHPAD
+    sudo pacman -Sy --noconfirm xf86-libinput libinput
+    
+    # BLUETHOOT
+    sudo pacman -Sy --noconfirm bluez bluez-utils
+    
+    # AUDIO
+    sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
+    sudo pacman -Sy --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
-# USB
-sudo pacman -Sy --noconfirm usbutils
-sudo pacman -Sy --noconfirm intel-ucode
-sudo pacman -Sy --noconfirm bolt
-
-# MOUSE and TOUCHPAD
-sudo pacman -Sy --noconfirm xf86-libinput libinput
-
-# BLUETHOOT
-sudo pacman -Sy --noconfirm bluez bluez-utils
-
-# AUDIO
-sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
-sudo pacman -Sy --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
-
-# TERMINAL
-sudo pacman -Rns qterminal
-sudo pacman -Sy --noconfirm alacritty
-
-# BROWSER
-sudo pacman -Sy --noconfirm falkon
-
-sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
-#sudo systemctl enable gdm --now     # Pra GNOME
-#sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
-
-sudo pacman -Sy --noconfirm --needed --noconfirm \
-intel-media-driver libva-intel-driver libva-utils \
-mesa vulkan-intel vulkan-tools \
-ffmpeg gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
-thermald tuned \
-linux-firmware \
-intel-ucode base-devel dkms
-
-sudo pacman -Sy --noconfirm --needed --noconfirm \
-papirus-icon-theme kvantum qt5-styleplugins qt6-styleplugins \
-adwaita-qt5 adwaita-qt6 \
-arc-gtk-theme breeze-gtk \
-ttf-atkinson-hyperlegible
-
-sudo pacman -Sy --noconfirm linux-firmware 
-
+    # TERMINAL
+    sudo pacman -Rns qterminal
+    sudo pacman -Sy --noconfirm alacritty
+    
+    # BROWSER
+    sudo pacman -Sy --noconfirm falkon
+    
+    sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
+    #sudo systemctl enable gdm --now     # Pra GNOME
+    #sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
+    
+    sudo pacman -Sy --noconfirm --needed --noconfirm \
+    intel-media-driver libva-intel-driver libva-utils \
+    mesa vulkan-intel vulkan-tools \
+    ffmpeg gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
+    thermald tuned \
+    linux-firmware \
+    intel-ucode base-devel dkms
+    
+    sudo pacman -Sy --noconfirm --needed --noconfirm \
+    papirus-icon-theme kvantum qt5-styleplugins qt6-styleplugins \
+    adwaita-qt5 adwaita-qt6 \
+    arc-gtk-theme breeze-gtk \
+    ttf-atkinson-hyperlegible
+    
+    sudo pacman -Sy --noconfirm linux-firmware 
+    
 
     
     ```
