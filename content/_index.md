@@ -157,6 +157,12 @@ Login feito, entao:
     Por exemplo, lxqt
     ```bash
 
+    # MIRRORS
+    sudo pacman -Sy --noconfirm --needed reflector
+    sudo reflector --country Brazil --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+    sudo pacman -Syy
+    sudo reflector --country Brazil --latest 5 --sort rate
+
     # LXQt
     sudo pacman -Sy --noconfirm lxqt lxqt-archiver sddm
 
