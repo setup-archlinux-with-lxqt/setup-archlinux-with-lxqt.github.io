@@ -163,7 +163,7 @@ Login feito, entao:
     sudo pacman -Syy
     sudo reflector --country Brazil --latest 5 --sort rate
 
-    # LXQt
+    # LXQT
     sudo pacman -Sy --noconfirm --needed lxqt lxqt-archiver sddm
 
     # OPENBOX
@@ -177,7 +177,7 @@ Login feito, entao:
     # HD
     sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
     
-    # MOUSE and TOUCHPAD
+    # MOUSE e TOUCHPAD
     sudo pacman -Sy --noconfirm --needed xf86-libinput libinput
     
     # BLUETHOOT
@@ -195,14 +195,27 @@ Login feito, entao:
     #sudo systemctl enable gdm --now     # Pra GNOME
     #sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
     
-    sudo pacman -Sy --noconfirm --needed --noconfirm \
-    intel-media-driver libva-intel-driver libva-utils \
-    mesa vulkan-intel vulkan-tools \
-    ffmpeg gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
-    thermald tuned \
-    linux-firmware \
-    intel-ucode base-devel dkms
-
+    # DRIVERS
+    sudo pacman -Sy --noconfirm --needed intel-media-driver
+    sudo pacman -Sy --noconfirm --needed libva-intel-driver
+    sudo pacman -Sy --noconfirm --needed libva-utils
+    sudo pacman -Sy --noconfirm --needed mesa
+    sudo pacman -Sy --noconfirm --needed vulkan-intel
+    sudo pacman -Sy --noconfirm --needed vulkan-tools
+    sudo pacman -Sy --noconfirm --needed ffmpeg
+    sudo pacman -Sy --noconfirm --needed vulkan-tools
+    sudo pacman -Sy --noconfirm --needed vulkan-tools
+    sudo pacman -Sy --noconfirm --needed gst-plugins-good 
+    sudo pacman -Sy --noconfirm --needed gst-plugins-bad 
+    sudo pacman -Sy --noconfirm --needed gst-plugins-ugly 
+    sudo pacman -Sy --noconfirm --needed gst-libav
+    sudo pacman -Sy --noconfirm --needed thermald 
+    sudo pacman -Sy --noconfirm --needed tuned 
+    sudo pacman -Sy --noconfirm --needed linux-firmware 
+    sudo pacman -Sy --noconfirm --needed intel-ucode 
+    sudo pacman -Sy --noconfirm --needed base-devel 
+    sudo pacman -Sy --noconfirm --needed dkms
+      
     # MONITORES
     sudo pacman -Sy --noconfirm --needed arandr
 
