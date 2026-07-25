@@ -23,6 +23,8 @@ Ao consultar o preço atualizado de peças, computadores e notebooks, me levou a
 
 Do ponto de vista no uso de inteligencia artifical no meu dia-a-dia, ela se encaixa perfeitamente como motor consultivo (tradução, duvidas, comparativo, sumarização, tabulação, exemplos, duvidas e etc), portanto não faz sentido eu receber atualizacoes de software com recursos de IA, que nao tem sentido algum para meu uso final, a nao ser consumir recursos computacional do notebook, impossibilitando o uso.
 
+<b>EXECUTADO EM PROCESSADORES INTEL, SERIE RAPTOR LAKE</b>
+
 ### 0 - BIOS
 Entre na bios do seu computador, e desative o fast bios mode.
 
@@ -151,17 +153,62 @@ Login feito, entao:
 
 9. Conecte no Wifi
 
-10. Instale ambiente grafico de sua preferencia
+10. Instale ambiente grafico e demais dependencias
     Por exemplo, lxqt
     ```bash
-    sudo pacman -S lxqt lxqt-archiver sddm
-    sudo systemctl enable sddm
+
+
+# LXQt
+sudo pacman -Sy --noconfirm lxqt lxqt-archiver sddm
+
+# OPENBOX
+sudo pacman -Sy --noconfirm openbox
+
+# USB
+sudo pacman -Sy --noconfirm usbutils
+sudo pacman -Sy --noconfirm intel-ucode
+sudo pacman -Sy --noconfirm bolt
+
+# MOUSE and TOUCHPAD
+sudo pacman -Sy --noconfirm xf86-libinput libinput
+
+# BLUETHOOT
+sudo pacman -Sy --noconfirm bluez bluez-utils
+
+# AUDIO
+sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
+sudo pacman -Sy --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
+
+# TERMINAL
+sudo pacman -Rns qterminal
+sudo pacman -Sy --noconfirm alacritty
+
+# BROWSER
+sudo pacman -Sy --noconfirm falkon
+
+sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
+#sudo systemctl enable gdm --now     # Pra GNOME
+#sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
+
+sudo pacman -Sy --noconfirm --needed --noconfirm \
+intel-media-driver libva-intel-driver libva-utils \
+mesa vulkan-intel vulkan-tools \
+ffmpeg gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
+thermald tuned \
+linux-firmware \
+intel-ucode base-devel dkms
+
+sudo pacman -Sy --noconfirm --needed --noconfirm \
+papirus-icon-theme kvantum qt5-styleplugins qt6-styleplugins \
+adwaita-qt5 adwaita-qt6 \
+arc-gtk-theme breeze-gtk \
+ttf-atkinson-hyperlegible
+
+sudo pacman -Sy --noconfirm linux-firmware 
+
+
+    
     ```
-
-### Vá em frente
-- Voce vai precisar instalar os drivers de audio
-- Voce vai precisar instalar os drivers de bluetooth
-
 
 ### Recomendações
 1. Troca o bash pelo fish
