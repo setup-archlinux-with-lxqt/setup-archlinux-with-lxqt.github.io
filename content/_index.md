@@ -164,31 +164,31 @@ Login feito, entao:
     sudo reflector --country Brazil --latest 5 --sort rate
 
     # LXQt
-    sudo pacman -Sy --noconfirm lxqt lxqt-archiver sddm
+    sudo pacman -Sy --noconfirm --needed lxqt lxqt-archiver sddm
 
     # OPENBOX
-    sudo pacman -Sy --noconfirm openbox
+    sudo pacman -Sy --noconfirm --needed openbox
 
     # USB
-    sudo pacman -Sy --noconfirm usbutils
-    sudo pacman -Sy --noconfirm intel-ucode
-    sudo pacman -Sy --noconfirm bolt
+    sudo pacman -Sy --noconfirm --needed usbutils
+    sudo pacman -Sy --noconfirm --needed intel-ucode
+    sudo pacman -Sy --noconfirm --needed bolt
 
     # HD
     sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
     
     # MOUSE and TOUCHPAD
-    sudo pacman -Sy --noconfirm xf86-libinput libinput
+    sudo pacman -Sy --noconfirm --needed xf86-libinput libinput
     
     # BLUETHOOT
     sudo pacman -Sy --noconfirm --needed blueman bluez bluez-utils
     
     # AUDIO
-    sudo pacman -Sy --noconfirm sof-firmware alsa-ucm-conf sof-tools
-    sudo pacman -Sy --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
+    sudo pacman -Sy --noconfirm --needed sof-firmware alsa-ucm-conf sof-tools
+    sudo pacman -Sy --noconfirm --needed pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
     
     # BROWSER e DOWNLOAD
-    sudo pacman -Sy --noconfirm falkon
+    sudo pacman -Sy --noconfirm --needed falkon
     sudo pacman -Sy --noconfirm --needed uget aria2
     
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
@@ -204,7 +204,7 @@ Login feito, entao:
     intel-ucode base-devel dkms
 
     # MONITORES
-    sudo pacman -Sy --noconfirm arandr
+    sudo pacman -Sy --noconfirm --needed arandr
 
     # APARENCIA 
     sudo pacman -Sy --noconfirm --needed breeze-gtk   
@@ -241,7 +241,7 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed adw-gtk-theme
     sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
 
-    sudo pacman -Sy --noconfirm linux-firmware 
+    sudo pacman -Sy --noconfirm --needed linux-firmware 
 
 
     sudo systemctl enable --now bluetooth
