@@ -155,7 +155,7 @@ Login feito, entao:
 
 10. Instale ambiente grafico e demais dependencias
     Por exemplo, lxqt
-    Baixe-o [aqui](https://github.com/setup-archlinux-with-lxqt/setup-archlinux-with-lxqt.github.io/blob/main/static/files/install-lxqt.sh) depois rode no terminal com sh install-lxqt.sh
+    Baixe-o [aqui](https://drive.google.com/file/d/1O7iWHB7tO2DZm4lV1khJzgel14wnJ0TD/view?usp=sharing) depois rode no terminal com sh install-lxqt.sh
 
     Ou no terminal do arch 
     ```bash
