@@ -197,7 +197,9 @@ Login feito, entao:
     # GIT
     sudo pacman -Sy --noconfirm --needed git
 
-    
+    # JAVA
+    sudo pacman -Sy --needed --noconfirm jdk21-openjdk
+
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
     #sudo systemctl enable gdm --now     # Pra GNOME
     #sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
