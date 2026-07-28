@@ -193,6 +193,10 @@ Login feito, entao:
     # BROWSER e DOWNLOAD
     sudo pacman -Sy --noconfirm --needed falkon
     sudo pacman -Sy --noconfirm --needed uget aria2
+
+    # GIT
+    sudo pacman -Sy --noconfirm --needed git
+
     
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
     #sudo systemctl enable gdm --now     # Pra GNOME
