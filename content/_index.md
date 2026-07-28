@@ -196,12 +196,12 @@ Login feito, entao:
 
     # GIT
     sudo pacman -Sy --noconfirm --needed git
-
+    
     # JAVA
-    sudo pacman -Sy --needed --noconfirm jdk21-openjdk
-
+    sudo pacman -Sy --noconfirm --needed jdk21-openjdk
+    
     # MAVEN
-    sudo pacman -Sy --needed --noconfirm maven
+    sudo pacman -Sy --noconfirm --needed maven
 
 
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
