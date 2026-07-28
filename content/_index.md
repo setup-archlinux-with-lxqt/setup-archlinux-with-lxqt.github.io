@@ -200,6 +200,10 @@ Login feito, entao:
     # JAVA
     sudo pacman -Sy --needed --noconfirm jdk21-openjdk
 
+    # MAVEN
+    sudo pacman -Sy --needed --noconfirm maven
+
+
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
     #sudo systemctl enable gdm --now     # Pra GNOME
     #sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
