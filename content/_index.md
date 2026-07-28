@@ -257,6 +257,11 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed adw-gtk-theme
     sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
 
+    # DOCA
+    sudo pacman -Sy --noconfirm --needed tint2
+    sudo pacman -Sy --noconfirm --needed plank
+
+
     sudo pacman -Sy --noconfirm --needed linux-firmware 
 
 
