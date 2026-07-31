@@ -178,7 +178,10 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed bolt
 
     sudo pacman -Sy --noconfirm --needed android-tools
+    sudo pacman -Sy --noconfirm --needed gvfs
     sudo pacman -Sy --noconfirm --needed gvfs-mtp
+    sudo pacman -Sy --noconfirm --needed gvfs-goa 
+
     #adb devices
 
     # HD
