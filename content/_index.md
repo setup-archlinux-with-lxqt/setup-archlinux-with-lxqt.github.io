@@ -177,7 +177,7 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed intel-ucode
     sudo pacman -Sy --noconfirm --needed bolt
 
-    sudo pacman -S android-tools
+    sudo pacman -Sy --noconfirm --needed android-tools
     #adb devices
 
     # HD
