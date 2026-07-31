@@ -177,6 +177,9 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed intel-ucode
     sudo pacman -Sy --noconfirm --needed bolt
 
+    sudo pacman -S android-tools
+    #adb devices
+
     # HD
     sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
     sudo systemctl enable --now udisks2
