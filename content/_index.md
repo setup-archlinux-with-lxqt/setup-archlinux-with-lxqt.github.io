@@ -155,8 +155,11 @@ Login feito, entao:
 
 10. Instale ambiente grafico e demais dependencias
     Por exemplo, lxqt
-    Baixe-o [aqui](https://drive.google.com/file/d/1O7iWHB7tO2DZm4lV1khJzgel14wnJ0TD/view?usp=drive_link) depois rode no terminal com sh install-lxqt.sh
-    
+    Baixe-o [aqui](https://drive.google.com/drive/folders/13tuAH1TGpU4rDZynqm2xRj9N3ifgbEEw?usp=sharing) depois rode no terminal com
+    ```bash
+    sh setup-arch-with-lxqt-intel-raptor-lake-proc.sh
+    ```
+
     ```bash
 
     # MIRRORS
