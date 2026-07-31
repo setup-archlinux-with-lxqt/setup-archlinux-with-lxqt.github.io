@@ -179,7 +179,8 @@ Login feito, entao:
 
     # HD
     sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
-        
+    sudo systemctl enable --now udisks2
+    
     # MOUSE e TOUCHPAD
     sudo pacman -Sy --noconfirm --needed xf86-libinput libinput
     
