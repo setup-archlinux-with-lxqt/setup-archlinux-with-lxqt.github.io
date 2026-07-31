@@ -341,15 +341,18 @@ Login feito, entao:
 
 ### Pacotes
 ```bash
-
 adapta-gtk-theme 3.95.0.11-4
 adw-gtk-theme 6.5-1
 alsa-utils 1.2.16-1
+android-tools 36.0.1-2
 arandr 0.1.11-6
+aria2 1.37.0-3
 base 3-3
+base-devel 1-2
 blueman 2.4.6-2
 bluez-utils 5.87-2
 bolt 0.9.11-1
+brave-bin 1:1.93.129-1
 breeze 6.7.3-1
 breeze-cursors 6.7.3-1
 breeze-gtk 6.7.3-1
@@ -366,11 +369,16 @@ elementary-icon-theme 8.2.0-2
 elementary-wallpapers 8.0.0-2
 falkon 26.04.3-1
 featherpad 1.6.3-1
+git 2.55.0-1
 grub 2:2.14-1
 gtk-theme-elementary 8.2.2-2
+gvfs 1.60.2-1
+gvfs-goa 1.60.2-1
+gvfs-mtp 1.60.2-1
 htop 3.5.2-1
 intel-ucode 20260512-1
 iwd 3.12-1
+jdk21-openjdk 21.0.12.u8-1
 layer-shell-qt 6.7.3-1
 less 1:704-1
 libkscreen 6.7.3-1
@@ -398,7 +406,9 @@ lxqt-session 2.4.0-2
 lxqt-sudo 2.4.0-1
 lxqt-themes 2.4.0-1
 mate-icon-theme 1.28.0-2
+maven 3.9.16-1
 networkmanager 1.58.0-1
+ntfs-3g 2026.7.7-1
 obconf-qt 0.16.6-1
 obsidian-icon-theme 4.15-3
 ocean-sound-theme 6.7.3-1
@@ -412,9 +422,11 @@ pavucontrol-qt 2.4.0-1
 pcmanfm-qt 2.4.0-1
 pipewire-alsa 1:1.6.8-1
 pipewire-jack 1:1.6.8-1
+plank 0.11.89-5
 plasma-workspace-wallpapers 6.7.3-1
 pop-icon-theme 3.5.1-1
 qterminal 2.4.0-1
+reflector 2023-5
 screengrab 3.2.0-1
 sddm 0.21.0-7
 sof-firmware 2025.12.2-1
@@ -423,10 +435,15 @@ sound-theme-elementary 1.1.0-4
 sudo 1.9.17.p2-6
 swaylock 1.8.6-1
 ttf-atkinson-hyperlegible 1.006-2
+udiskie 2.6.2-1
+uget 2.2.3-7
 usbutils 019-1
 vim 9.2.0804-1
+vscodium-bin 1.126.04524-1
 xdg-desktop-portal-lxqt 1.4.0-1
+xsettingsd 1.0.4-1
 zram-generator 1.2.1-1
+
 
 
 ```
