@@ -179,13 +179,10 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed usbutils
     sudo pacman -Sy --noconfirm --needed intel-ucode
     sudo pacman -Sy --noconfirm --needed bolt
-
     sudo pacman -Sy --noconfirm --needed android-tools
     sudo pacman -Sy --noconfirm --needed gvfs
     sudo pacman -Sy --noconfirm --needed gvfs-mtp
     sudo pacman -Sy --noconfirm --needed gvfs-goa 
-
-    #adb devices
 
     # HD
     sudo pacman -Sy --noconfirm --needed udisks2 udiskie gvfs ntfs-3g
@@ -196,6 +193,7 @@ Login feito, entao:
     
     # BLUETHOOT
     sudo pacman -Sy --noconfirm --needed blueman bluez bluez-utils
+    sudo systemctl enable --now bluetooth
     
     # AUDIO
     sudo pacman -Sy --noconfirm --needed sof-firmware alsa-ucm-conf sof-tools
@@ -214,7 +212,7 @@ Login feito, entao:
     # MAVEN
     sudo pacman -Sy --noconfirm --needed maven
 
-
+    # LOGIN
     sudo systemctl enable sddm    # Pra KDE, LXQt, Cinnamon, Deepin, Budgie, i3, Sway
     #sudo systemctl enable gdm --now     # Pra GNOME
     #sudo systemctl enable lightdm --now # Pra XFCE, MATE, Openbox
@@ -281,11 +279,10 @@ Login feito, entao:
     # DOCA
     sudo pacman -Sy --noconfirm --needed plank
 
+    # SYS INFO
+    sudo pacman -Sy --noconfirm --needed fastfetch
 
     sudo pacman -Sy --noconfirm --needed linux-firmware 
-
-
-    sudo systemctl enable --now bluetooth
 
     ```
 
