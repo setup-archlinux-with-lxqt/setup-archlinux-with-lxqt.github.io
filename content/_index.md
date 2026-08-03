@@ -287,6 +287,10 @@ Login feito, entao:
     sudo systemctl start sshd
     sudo systemctl enable sshd
 
+    # FIREWALL IPTABLES
+    # INTRANET (LIBERA CONEXOES NO FIREWALL APENAS NA REDE LOCAL)
+    sudo iptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 -j ACCEPT
+
     sudo pacman -Sy --noconfirm --needed linux-firmware 
 
     ```
