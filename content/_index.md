@@ -282,6 +282,11 @@ Login feito, entao:
     # SYS INFO
     sudo pacman -Sy --noconfirm --needed fastfetch
 
+    # SSH
+    sudo pacman -Sy --noconfirm --needed openssh
+    sudo systemctl start sshd
+    sudo systemctl enable sshd
+
     sudo pacman -Sy --noconfirm --needed linux-firmware 
 
     ```
