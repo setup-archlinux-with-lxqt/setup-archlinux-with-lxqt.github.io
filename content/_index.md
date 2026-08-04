@@ -276,6 +276,29 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed adw-gtk-theme
     sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
 
+    # FONTES
+    sudo pacman -Sy --noconfirm --needed noto-fonts-extra
+    sudo pacman -Sy --noconfirm --needed opendesktop-fonts
+    sudo pacman -Sy --noconfirm --needed otf-atkinson-hyperlegible
+    sudo pacman -Sy --noconfirm --needed otf-atkinsonhyperlegiblemono-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-fira-code
+    sudo pacman -Sy --noconfirm --needed ttf-fira-mono
+    sudo pacman -Sy --noconfirm --needed ttf-fira-sans
+    sudo pacman -Sy --noconfirm --needed ttf-firacode-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-jetbrains-mono
+    sudo pacman -Sy --noconfirm --needed ttf-jetbrains-mono-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-nerd-fonts-symbols
+    sudo pacman -Sy --noconfirm --needed ttf-nerd-fonts-symbols-common
+    sudo pacman -Sy --noconfirm --needed ttf-nerd-fonts-symbols-mono
+    sudo pacman -Sy --noconfirm --needed ttf-roboto
+    sudo pacman -Sy --noconfirm --needed ttf-roboto-mono
+    sudo pacman -Sy --noconfirm --needed ttf-roboto-mono-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-space-mono-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-ubuntu-font-family
+    sudo pacman -Sy --noconfirm --needed ttf-ubuntu-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-victor-mono-nerd
+    sudo pacman -Sy --noconfirm --needed ttf-zed-mono-nerd
+
     # DOCA
     sudo pacman -Sy --noconfirm --needed plank
 
