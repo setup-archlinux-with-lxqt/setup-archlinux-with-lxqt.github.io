@@ -253,6 +253,7 @@ Login feito, entao:
     # TEMAS
     sudo pacman -Sy --noconfirm --needed breeze
     sudo pacman -Sy --noconfirm --needed breeze-gtk   
+    sudo pacman -Sy --noconfirm --needed kvantum-qt5
     sudo pacman -Sy --noconfirm --needed papirus-icon-theme
     sudo pacman -Sy --noconfirm --needed plasma-workspace-wallpapers
     sudo pacman -Sy --noconfirm --needed elementary-wallpapers
