@@ -251,6 +251,7 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed lxappearance
 
     # TEMAS
+    sudo pacman -Sy --noconfirm --needed breeze
     sudo pacman -Sy --noconfirm --needed breeze-gtk   
     sudo pacman -Sy --noconfirm --needed papirus-icon-theme
     sudo pacman -Sy --noconfirm --needed plasma-workspace-wallpapers
