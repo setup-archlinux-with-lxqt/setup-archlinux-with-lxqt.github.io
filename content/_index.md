@@ -245,6 +245,12 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed arandr
 
     # APARENCIA 
+    sudo pacman -Sy --noconfirm --needed qt5ct
+    sudo pacman -Sy --noconfirm --needed qt6ct
+    sudo pacman -Sy --noconfirm --needed kvantum
+    sudo pacman -Sy --noconfirm --needed lxappearance
+
+    # TEMAS
     sudo pacman -Sy --noconfirm --needed breeze-gtk   
     sudo pacman -Sy --noconfirm --needed papirus-icon-theme
     sudo pacman -Sy --noconfirm --needed plasma-workspace-wallpapers
@@ -301,7 +307,7 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed ttf-ubuntu-nerd
     sudo pacman -Sy --noconfirm --needed ttf-victor-mono-nerd
     sudo pacman -Sy --noconfirm --needed ttf-zed-mono-nerd
-
+    
     # DOCA
     sudo pacman -Sy --noconfirm --needed plank
 
