@@ -203,6 +203,9 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed falkon
     sudo pacman -Sy --noconfirm --needed uget aria2
 
+    # EREADERS
+    sudo pacman -Sy --noconfirm --needed calibre okular
+
     # GIT
     sudo pacman -Sy --noconfirm --needed git
     
