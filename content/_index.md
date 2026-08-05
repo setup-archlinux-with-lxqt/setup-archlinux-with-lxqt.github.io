@@ -284,6 +284,12 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed adwaita-icon-theme
     sudo pacman -Sy --noconfirm --needed adw-gtk-theme
     sudo pacman -Sy --noconfirm --needed adapta-gtk-theme
+    sudo pacman -Sy --noconfirm --needed adw-gtk-theme
+    sudo pacman -Sy --noconfirm --needed deepin-gtk-theme
+    sudo pacman -Sy --noconfirm --needed gtk-theme-elementary
+    sudo pacman -Sy --noconfirm --needed materia-gtk-theme
+    sudo pacman -Sy --noconfirm --needed pop-gtk-theme
+
 
     # FONTES
     sudo pacman -Sy --noconfirm --needed noto-fonts-extra
