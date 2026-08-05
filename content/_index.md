@@ -294,7 +294,22 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed gtk-theme-elementary
     sudo pacman -Sy --noconfirm --needed materia-gtk-theme
     sudo pacman -Sy --noconfirm --needed pop-gtk-theme
-
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-all
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-black
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-blue
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-brown
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-dracula
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-green
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-grey
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-manjaro
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-nord
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-orange
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-pink
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-purple
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-red
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-standard
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-ubuntu
+    sudo pacman -Sy --noconfirm --needed tela-circle-icon-theme-yellow
 
     # FONTES
     sudo pacman -Sy --noconfirm --needed noto-fonts-extra
