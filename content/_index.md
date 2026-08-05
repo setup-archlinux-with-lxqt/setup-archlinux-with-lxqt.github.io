@@ -249,6 +249,9 @@ Login feito, entao:
     sudo pacman -Sy --noconfirm --needed qt6ct
     sudo pacman -Sy --noconfirm --needed kvantum
     sudo pacman -Sy --noconfirm --needed lxappearance
+    sudo pacman -Sy --noconfirm --needed lxappearance-obconf
+    sudo pacman -Sy --noconfirm --needed obconf-qt
+
 
     # TEMAS
     sudo pacman -Sy --noconfirm --needed breeze
