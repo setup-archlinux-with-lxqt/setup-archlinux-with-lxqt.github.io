@@ -190,6 +190,7 @@ Login feito, entao:
     
     # MOUSE e TOUCHPAD
     sudo pacman -Sy --noconfirm --needed xf86-libinput libinput
+    sudo pacman -Sy --noconfirm --needed xf86-input-libinput
     
     # BLUETHOOT
     sudo pacman -Sy --noconfirm --needed blueman bluez bluez-utils
